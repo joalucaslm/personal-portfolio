@@ -51,15 +51,20 @@ export default function Hero() {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <section className="min-h-screen mt-24 flex flex-col items-center">
-      <motion.span
+    <section
+      className="min-h-screen mt-24 flex flex-col items-center"
+      aria-label="Introdução e apresentação"
+    >
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
         className="inline-block px-4 py-2 text-xs tracking-[0.3em] uppercase text-(--gold) border border-(--gold) rounded-sm"
+        role="text"
+        aria-label="Cargo principal"
       >
         FULL STACK DEVELOPER
-      </motion.span>
+      </motion.div>
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -74,6 +79,7 @@ export default function Hero() {
         animate={{ scaleX: 1 }}
         transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
         className="mb-8 origin-center h-px w-96 border-(--gold)"
+        aria-hidden="true"
       />
 
       <motion.div
@@ -81,12 +87,20 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
         className="text-xl md:text-2xl text-muted-foreground mb-8 h-10 font-light"
+        aria-hidden="true"
       >
         <span className="font-mono text-lg tracking-wide">
           {displayedText}
           <span className="animate-pulse text-primary ml-0.5">|</span>
         </span>
       </motion.div>
+
+      <div className="sr-only">
+        <h2>Especialidades e Habilidades</h2>
+        <p>
+          Full Stack Developer, React Specialist, Node.js Expert, Problem Solver
+        </p>
+      </div>
 
       <motion.p
         initial={{ opacity: 0 }}
@@ -103,10 +117,19 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2 }}
         className="flex justify-center gap-6"
-      >
-        <IconButton Icon={Github} />
-        <IconButton Icon={Linkedin} />
-        <IconButton Icon={Mail} />
+        aria-label="Links de redes sociais e contato"
+      > 
+        <IconButton
+          Icon={Github}
+          href="https://github.com/joaolucaslm"
+          aria-label="Visite meu perfil no GitHub"
+        />
+        <IconButton
+          Icon={Linkedin}
+          href="https://linkedin.com/in/joaolucaslm"
+          aria-label="Conecte-se comigo no LinkedIn"
+        />
+        <IconButton Icon={Mail} mail={true} aria-label="Envie-me um email" />
       </motion.nav>
 
       <motion.button
@@ -115,6 +138,7 @@ export default function Hero() {
         transition={{ delay: 1.5 }}
         onClick={scrollToAbout}
         className="absolute bottom-12 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-accent transition-colors"
+        aria-label="Rolar para a seção Sobre Mim"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}

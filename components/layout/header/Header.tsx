@@ -13,8 +13,8 @@ const playfair = Playfair_Display({ subsets: ["latin"], display: "swap" });
 const navLinks = [
   { name: "Início", href: "#" },
   { name: "Sobre", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projetos", href: "#projects" },
+  // { name: "Skills", href: "#skills" },
+  // { name: "Projetos", href: "#projects" },
   { name: "Contato", href: "#contact" },
 ];
 
@@ -48,6 +48,7 @@ export default function Header() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled ? "py-3" : "py-6"
         }`}
+        aria-label="Voltar ao início da página"
       >
         <div className="container mx-auto">
           <div
@@ -70,7 +71,7 @@ export default function Header() {
               <span className="text-(--gold)">.</span>
             </motion.a>
 
-            <div className="hidden md:flex items-center gap-10">
+            <nav className="hidden md:flex items-center gap-10">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -92,13 +93,20 @@ export default function Header() {
                   {link.name}
                 </a>
               ))}
-            </div>
+            </nav>
 
             <div className="hidden md:flex items-center gap-4">
               <ThemeToggle />
-              <button className="cursor-pointer uppercase bg-(--btn-bg) px-6 py-2.5 rounded-sm text-(--text-secondary) text-sm font-light tracking-wider transition-all duration-300 hover:bg-(--btn-bg-hover) hover:scale-[103%]">
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollTo("#contact");
+                }}
+                className="cursor-pointer uppercase bg-(--btn-bg) px-6 py-2.5 rounded-sm text-(--text-secondary) text-sm font-light tracking-wider transition-all duration-300 hover:bg-(--btn-bg-hover) hover:scale-[103%]"
+              >
                 CONTATO
-              </button>
+              </a>
             </div>
 
             <div className="md:hidden flex items-center gap-3">
