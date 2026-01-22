@@ -1,6 +1,6 @@
 "use client";
 
-import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
+import ThemeToggle from "@/components/ui/ThemeToggle/ThemeToggle";
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";

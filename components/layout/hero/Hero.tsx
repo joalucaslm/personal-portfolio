@@ -1,6 +1,6 @@
 "use client";
 
-import IconButton from "@/components/IconButton/IconButton";
+import IconButton from "@/components/ui/IconButton/IconButton";
 import { Linkedin, Github, Mail, ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -51,7 +51,7 @@ export default function Hero() {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <section className="mt-24 flex flex-col items-center">
+    <section className="min-h-screen mt-24 flex flex-col items-center">
       <motion.span
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -120,7 +120,7 @@ export default function Hero() {
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ArrowDown className="w-5 h-5" />
+          <ArrowDown className="w-5 h-5 cursor-pointer" />
         </motion.div>
       </motion.button>
     </section>
