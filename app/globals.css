@@ -14,15 +14,15 @@ body {
   --bg-primary: #0e1116; /* fundo principal */
   --bg-secondary: #161a21; /* cards e seções */
 
-  --text-primary: #ededed; /* branco suave */
-  --text-secondary: #a9adb3; /* cinza elegante */
+  --text-primary: #a9adb3; /* branco suave */
+  --text-secondary: #ededed; /* cinza elegante */
 
   --border-color: #232833;
 
   --accent: #24394c; /* azul petróleo / navy */
   --accent-hover: #2f4b63;
 
-  --btn-bg: #243C4C;
+  --btn-bg: #243c4c;
   --btn-bg-hover: #223846;
 
   --gold: #bfa980; /* dourado fosco (usar pouco) */

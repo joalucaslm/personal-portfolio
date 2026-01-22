@@ -66,7 +66,7 @@ export default function Header() {
               className={`${playfair.className} font-display text-xl tracking-wide`}
               whileHover={{ opacity: 0.7 }}
             >
-              <span className="text-(--text-primary)">JOÃO LUCAS LIMA</span>
+              <span className="text-(--text-secondary)">JOÃO LUCAS LIMA</span>
               <span className="text-(--gold)">.</span>
             </motion.a>
 
@@ -80,9 +80,9 @@ export default function Header() {
                     scrollTo(link.href);
                   }}
                   className="
-                    relative text-(--text-secondary) text-sm tracking-wider uppercase
+                    relative text-(--text-primary) text-sm tracking-wider uppercase
                     
-                    transition-colors duration-300 hover:text-(--text-primary)
+                    transition-colors duration-300 hover:text-(--text-secondary)
                   
                     after:content-[''] after:absolute after:left-0 after:-bottom-1
                     after:h-px after:w-0 after:bg-(--gold)
@@ -96,7 +96,7 @@ export default function Header() {
 
             <div className="hidden md:flex items-center gap-4">
               <ThemeToggle />
-              <button className="cursor-pointer uppercase bg-(--btn-bg) px-6 py-2.5 rounded-sm text-sm font-light tracking-wider transition-all duration-300 hover:bg-(--btn-bg-hover) hover:scale-[103%]">
+              <button className="cursor-pointer uppercase bg-(--btn-bg) px-6 py-2.5 rounded-sm text-(--text-secondary) text-sm font-light tracking-wider transition-all duration-300 hover:bg-(--btn-bg-hover) hover:scale-[103%]">
                 CONTATO
               </button>
             </div>
