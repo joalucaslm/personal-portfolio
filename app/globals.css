@@ -27,7 +27,11 @@ body {
 
   --gold: #bfa980; /* dourado fosco (usar pouco) */
 
+  --glass-border: hsl(215 18% 20% / 0.6);
+
   --shadow: rgba(0, 0, 0, 0.6);
+  --shadow-subtle: 0 2px 20px hsl(0 0% 0% / 0.05);
+  --shadow-card: 0 4px 30px hsl(0 0% 0% / 0.4);
 }
 
 /* ---------- LIGHT MODE (Luxo Claro) ---------- */
@@ -60,4 +64,17 @@ h4,
 h5,
 h6 {
   letter-spacing: 0.3px;
+}
+
+.luxury-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: var(--glass-border);
+  box-shadow: var(--shadow-subtle);
+}
+
+.luxury-card:hover {
+  box-shadow: var(--shadow-card);
 }

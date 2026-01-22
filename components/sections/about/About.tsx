@@ -92,7 +92,7 @@ export default function About() {
                 <div className="absolute -inset-8 border border-(--accent)/50 rounded-sm" />
 
                 <div className="relative overflow-hidden">
-                  <div className="aspect-[4/5] bg-gradient-to-br from-secondary to-muted flex items-center justify-center">
+                  <div className="aspect-4/5 bg-linear-to-br from-secondary to-muted flex items-center justify-center">
                     <Image src={JoaoLucas} alt="" fill />
                   </div>
                 </div>
