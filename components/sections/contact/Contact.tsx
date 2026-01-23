@@ -83,15 +83,6 @@ export default function Contact() {
     setIsLoading(true);
     setIsError(false);
 
-    console.log(
-      "Service ID:",
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      "Template ID:",
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      "Public Key:",
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-    );
-
     try {
       await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
@@ -303,7 +294,7 @@ export default function Contact() {
                   }
                   rows={5}
                   maxLength={2000}
-                  className="w-full px-4 py-3 bg-(--bg-secondary) border border-(--border-color) rounded-sm focus:border-(--accent) focus:outline-none transition-colors font-light"
+                    className="w-full px-4 py-3 bg-(--bg-secondary) border border-(--border-color) rounded-sm focus:border-(--accent) focus:outline-none transition-colors font-light"
                   placeholder="Conte-me sobre seu projeto..."
                   required
                   aria-required="true"
