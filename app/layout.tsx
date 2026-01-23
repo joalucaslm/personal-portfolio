@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "João Lucas Lima" }],
   creator: "João Lucas Lima",
-  metadataBase: new URL("https://joaolucasdev.com"),
+  metadataBase: new URL("https://www.joaolucasdev.com"),
   openGraph: {
     title: "João Lucas Lima | Desenvolvedor Full Stack",
     description:
       "Confira meu portfólio com projetos em React, Next.js e UI moderna.",
-    url: "https://joaolucasdev.com",
+    url: "https://www.joaolucasdev.com",
     siteName: "Portfólio João Lucas Lima",
     images: [
       {
