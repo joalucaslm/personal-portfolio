@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/provider/ThemeProvider";
 import Header from "@/components/layout/header/Header";
 import Footer from "@/components/layout/footer/Footer";
 import { Inter } from "next/font/google";
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     "react",
     "next.js",
     "portfólio",
-    "desenvolvedor web",
+    "desenvolvedor full stack",
   ],
   authors: [{ name: "João Lucas Lima" }],
   creator: "João Lucas Lima",
@@ -54,10 +55,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo/favicon.svg" sizes="any" />
       </head>
-      <body className={`${inter.className} dark`}>
-        <Header />
-        {children}
-        <Footer />
+      <body className={`${inter.className}`}>
+        <ThemeProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

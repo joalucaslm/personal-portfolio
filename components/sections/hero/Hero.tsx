@@ -11,9 +11,10 @@ const playfair = Playfair_Display({ subsets: ["latin"], display: "swap" });
 
 const roles = [
   "Full Stack Developer",
+  "Teaching Through Code",
   "React Specialist",
-  "Node.js Expert",
-  "Problem Solver",
+  "Obsessed With Learning",
+  "Building With Purpose",
 ];
 
 export default function Hero() {
@@ -108,8 +109,8 @@ export default function Hero() {
         transition={{ delay: 0.8 }}
         className="w-2xl text-center text-lg mb-8"
       >
-        Transformo ideias em experiências digitais excepcionais. Especializado
-        em aplicações web modernas e escaláveis.
+        Obcecado por aprender, determinado a ensinar e focado em construir
+        tecnologia de alto nível.
       </motion.p>
 
       <motion.nav
@@ -118,7 +119,7 @@ export default function Hero() {
         transition={{ delay: 1.2 }}
         className="flex justify-center gap-6"
         aria-label="Links de redes sociais e contato"
-      > 
+      >
         <IconButton
           Icon={Github}
           href="https://github.com/joaolucaslm"

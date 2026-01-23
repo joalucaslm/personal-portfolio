@@ -2,23 +2,14 @@
 
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useTheme } from "@/provider/ThemeProvider";
 
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState(true);
-
-  useEffect(() => {
-    const root = document.documentElement;
-    if (isDark) {
-      root.classList.remove("light");
-    } else {
-      root.classList.add("light");
-    }
-  }, [isDark]);
+  const { isDark, toggleTheme } = useTheme();
 
   return (
     <motion.button
-      onClick={() => setIsDark(!isDark)}
+      onClick={toggleTheme}
       className="relative p-2.5 rounded-sm cursor-pointer border border-(--border-color) backdrop-blur-sm transition-colors hover:border-primary/50"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}

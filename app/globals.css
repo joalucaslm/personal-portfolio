@@ -9,23 +9,22 @@ body {
     color 0.3s ease;
 }
 
-/* ---------- DARK MODE (Luxo) ---------- */
 .dark {
-  --bg-primary: #0e1116; /* fundo principal */
-  --bg-secondary: #161a21; /* cards e seções */
+  --bg-primary: #0e1116;
+  --bg-secondary: #161a21;
 
-  --text-primary: #a9adb3; /* branco suave */
-  --text-secondary: #ededed; /* cinza elegante */
+  --text-primary: #a9adb3;
+  --text-secondary: #ededed;
 
   --border-color: #232833;
 
-  --accent: #24394c; /* azul petróleo / navy */
+  --accent: #24394c;
   --accent-hover: #2f4b63;
 
   --btn-bg: #243c4c;
   --btn-bg-hover: #223846;
 
-  --gold: #bfa980; /* dourado fosco (usar pouco) */
+  --gold: #bfa980;
 
   --glass-border: hsl(215 18% 20% / 0.6);
 
@@ -34,21 +33,26 @@ body {
   --shadow-card: 0 4px 30px hsl(0 0% 0% / 0.4);
 }
 
-/* ---------- LIGHT MODE (Luxo Claro) ---------- */
 .light {
-  --bg-primary: #f5f6f4; /* off-white */
-  --bg-secondary: #ffffff; /* cards */
+  --bg-primary: #f5f6f4;
+  --bg-secondary: #ffffff;
 
-  --text-primary: #1c1f23; /* preto suave */
-  --text-secondary: #5f6368;
+  --text-primary: #5f6368;
+  --text-secondary: #1a1d23;
 
-  --border-color: #d6d8d5;
+  --border-color: #bec0be;
 
-  --accent: #24394c; /* mesmo azul sofisticado */
+  --accent: #24394c;
   --accent-hover: #1f3142;
 
-  --gold: #c2a46d; /* dourado fosco claro */
+  --btn-bg: #243c4c;
+  --btn-bg-hover: #223846;
 
+  --gold: #c2a46d;
+
+  --glass-border: hsl(215 18% 20% / 0.6);
+  --shadow-subtle: 0 2px 20px hsl(0 0% 0% / 0.05);
+  --shadow-card: 0 4px 30px hsl(0 0% 0% / 0.4);
   --shadow: rgba(0, 0, 0, 0.08);
 }
 

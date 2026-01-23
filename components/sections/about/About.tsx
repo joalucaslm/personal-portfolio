@@ -58,7 +58,7 @@ export default function About() {
           >
             <div className="relative w-full max-w-md mx-auto">
               <div
-                className="absolute -inset-4 border border-(--gold)/20 rounded-sm"
+                className="absolute -inset-4 border border-(--gold)/50 rounded-sm"
                 aria-hidden="true"
               />
               <div

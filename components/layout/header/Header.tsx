@@ -103,7 +103,7 @@ export default function Header() {
                   e.preventDefault();
                   scrollTo("#contact");
                 }}
-                className="cursor-pointer uppercase bg-(--btn-bg) px-6 py-2.5 rounded-sm text-(--text-secondary) text-sm font-light tracking-wider transition-all duration-300 hover:bg-(--btn-bg-hover) hover:scale-[103%]"
+                className="cursor-pointer uppercase bg-(--btn-bg) px-6 py-2.5 rounded-sm text-[#ededed] text-sm font-light tracking-wider transition-all duration-300 hover:bg-(--btn-bg-hover) hover:scale-[103%]"
               >
                 CONTATO
               </a>
