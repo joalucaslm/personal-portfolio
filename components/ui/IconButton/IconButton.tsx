@@ -29,12 +29,12 @@ export default function IconButton({
   }
 
   return (
-    <button
+    <div
       className={className}
       aria-label={ariaLabel}
       onClick={mail ? scrollContact : undefined}
     >
       <Icon className={`w-5 h-5 text-(--${color}) text-muted-foreground`} />
-    </button>
+    </div>
   );
 }
