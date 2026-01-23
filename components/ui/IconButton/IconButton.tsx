@@ -33,6 +33,7 @@ export default function IconButton({
       className={className}
       aria-label={ariaLabel}
       onClick={mail ? scrollContact : undefined}
+      aria-hidden="true"
     >
       <Icon className={`w-5 h-5 text-(--${color}) text-muted-foreground`} />
     </div>
