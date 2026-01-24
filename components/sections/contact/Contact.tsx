@@ -114,7 +114,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full sm:py-32 relative overflow-hidden"
+      className="w-full py-8 sm:py-32 relative overflow-hidden"
       aria-labelledby="contact-heading"
     >
       <motion.div

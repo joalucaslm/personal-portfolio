@@ -140,8 +140,12 @@ export default function Header() {
           initial={{ x: "100%" }}
           animate={{ x: isMobileMenuOpen ? 0 : "100%" }}
           transition={{ type: "spring", damping: 30, stiffness: 200 }}
-          className="absolute right-0 top-0 bottom-0 w-3/4 max-w-sm bg-(--bg-secondary) rounded-(--radius) border border-(--border-color) shadow-[0_10px_30px_var(--shadow)] p-8 pt-24"
+          className="absolute right-0 top-0 bottom-0 w-2/4 max-w-sm bg-(--bg-secondary) rounded-(--radius) border border-(--border-color) shadow-[0_10px_30px_var(--shadow)] p-8 pt-24"
         >
+          <div className="absolute top-8">
+            <ThemeToggle />
+          </div>
+
           <div className="flex flex-col gap-8">
             {navLinks.map((link) => (
               <a
