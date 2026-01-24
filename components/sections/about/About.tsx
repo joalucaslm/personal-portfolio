@@ -5,6 +5,15 @@ import JoaoLucas from "@/public/image/Pitch João Lucas Lima M.Dias Branco.webp"
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import {
+  SiTypescript,
+  SiExpress,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiPostgresql,
+} from "react-icons/si";
 
 import { Playfair_Display } from "next/font/google";
 
@@ -118,6 +127,22 @@ export default function About() {
               . Gosto de estudar e experimentar novas tecnologias e estou sempre
               em prol do bem-estar da comunidade de programação.
             </p>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="flex justify-center items-center gap-6 text-3xl text-(--text-secundary)"
+            >
+              <FaNodeJs title="Node.js" />
+              <SiExpress title="Express" />
+              <SiNextdotjs title="Next.js" />
+              <SiTypescript title="TypeScript" />
+              <FaReact title="React" />
+              <SiTailwindcss title="Tailwind CSS" />
+              <SiPostgresql title="PostgreSQL" />
+              <SiMongodb title="MongoDB" />
+            </motion.div>
           </motion.div>
         </div>
       </motion.div>
