@@ -55,7 +55,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo/favicon.svg" sizes="any" />
       </head>
-      <body className={`${inter.className}`}>
+      <body className={inter.className}>
         <ThemeProvider>
           <Header />
           {children}

@@ -53,7 +53,7 @@ export default function Hero() {
   };
   return (
     <section
-      className="min-h-screen mt-24 flex flex-col items-center"
+      className="sm:min-h-screen mt-24 flex flex-col items-center"
       aria-label="Introdução e apresentação"
     >
       <motion.div
@@ -70,7 +70,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
-        className={`${playfair.className} text-(--text-secondary) p-8 font-display text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight`}
+        className={`${playfair.className} text-(--text-secondary) px-4 py-8 sm:p-8 font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight`}
       >
         João Lucas Lima
       </motion.h1>
@@ -79,7 +79,7 @@ export default function Hero() {
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
-        className="mb-8 origin-center h-px w-96 border-(--gold)"
+        className="mb-8 origin-center h-px w-40 sm:w-96 border-(--gold)"
         aria-hidden="true"
       />
 
@@ -107,7 +107,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
-        className="w-2xl text-center text-lg mb-8"
+        className="px-4 md:px-0 md:w-2xl text-center text-lg mb-8"
       >
         Obcecado por aprender, determinado a ensinar e focado em construir
         tecnologia de alto nível.
@@ -138,7 +138,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
         onClick={scrollToAbout}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-accent transition-colors"
+        className="mt-8 text-muted-foreground hover:text-accent transition-colors"
         aria-label="Rolar para a seção Sobre Mim"
       >
         <motion.div

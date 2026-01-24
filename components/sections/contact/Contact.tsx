@@ -114,7 +114,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-32 relative overflow-hidden"
+      className="w-full sm:py-32 relative overflow-hidden"
       aria-labelledby="contact-heading"
     >
       <motion.div
@@ -166,7 +166,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.5 }}
-            className="lg:col-span-2 space-y-6"
+            className="lg:col-span-2 space-y-6 flex sm:block flex-col sm:flex-row items-center"
             aria-label="Informações de contato"
           >
             {contactInfo.map((info, index) => (
@@ -175,7 +175,7 @@ export default function Contact() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ delay: 0.6 + index * 0.1 }}
-                className="luxury-card bg-(--accent)/10 p-6 flex items-center gap-5 group"
+                className="luxury-card bg-(--accent)/10 p-6 w-72 sm:w-full flex flex-col sm:flex-row items-center gap-5"
               >
                 <IconButton Icon={info.icon} color="gold" />
                 <div>
@@ -294,7 +294,7 @@ export default function Contact() {
                   }
                   rows={5}
                   maxLength={2000}
-                    className="w-full px-4 py-3 bg-(--bg-secondary) border border-(--border-color) rounded-sm focus:border-(--accent) focus:outline-none transition-colors font-light"
+                  className="w-full px-4 py-3 bg-(--bg-secondary) border border-(--border-color) rounded-sm focus:border-(--accent) focus:outline-none transition-colors font-light"
                   placeholder="Conte-me sobre seu projeto..."
                   required
                   aria-required="true"

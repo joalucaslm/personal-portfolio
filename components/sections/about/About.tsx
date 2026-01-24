@@ -58,12 +58,12 @@ export default function About() {
           />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-20 ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="relative"
+            className="relative px-8"
           >
             <div className="relative w-full max-w-md mx-auto">
               <div
@@ -76,12 +76,11 @@ export default function About() {
               />
 
               <div className="relative overflow-hidden">
-                <div className="aspect-4/5 bg-linear-to-br from-secondary to-muted flex items-center justify-center">
+                <div className="aspect-4/5 bg-linear-to-br flex items-center justify-center">
                   <Image
                     src={JoaoLucas}
                     alt="João Lucas Lima - Desenvolvedor Full Stack"
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover"
                     priority={false}
                   />
@@ -96,7 +95,7 @@ export default function About() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="space-y-8"
           >
-            <p className="text-lg text-muted-foreground leading-relaxed font-light">
+            <p className="text-justify text-lg text-muted-foreground leading-relaxed font-light">
               Olá! Sou o João Lucas Lima! Sou{" "}
               <strong className="font-semibold text-foreground">
                 Desenvolvedor Full Stack
@@ -106,7 +105,7 @@ export default function About() {
               produtos de alto impacto.
             </p>
 
-            <p className="text-lg text-muted-foreground leading-relaxed font-light">
+            <p className="text-justify text-lg text-muted-foreground leading-relaxed font-light">
               Atualmente estou no 5º semestre de{" "}
               <strong className="font-semibold text-foreground">
                 Ciência da Computação
@@ -118,7 +117,7 @@ export default function About() {
               </strong>
               , além de bancos de dados SQL e NoSQL.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed font-light">
+            <p className="text-justify text-lg text-muted-foreground leading-relaxed font-light">
               Acredito que programação é mais do que código. Por isso, você pode
               me encontrar ensinando e{" "}
               <strong className="font-semibold text-foreground">
@@ -132,7 +131,7 @@ export default function About() {
               initial={{ opacity: 0, x: 50 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="flex justify-center items-center gap-6 text-3xl text-(--text-secundary)"
+              className="flex justify-center items-center gap-6 px-4 text-lg sm:text-3xl text-(--text-secundary)"
             >
               <FaNodeJs title="Node.js" />
               <SiExpress title="Express" />

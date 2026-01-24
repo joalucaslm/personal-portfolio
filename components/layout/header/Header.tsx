@@ -13,8 +13,6 @@ const playfair = Playfair_Display({ subsets: ["latin"], display: "swap" });
 const navLinks = [
   { name: "Início", href: "#" },
   { name: "Sobre", href: "#about" },
-  // { name: "Skills", href: "#skills" },
-  // { name: "Projetos", href: "#projects" },
   { name: "Contato", href: "#contact" },
 ];
 
@@ -50,7 +48,7 @@ export default function Header() {
         }`}
         aria-label="Voltar ao início da página"
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 md:px-0">
           <div
             className={`flex items-center justify-between transition-all duration-500 border-(--border-color) ${
               isScrolled
@@ -132,7 +130,7 @@ export default function Header() {
           opacity: isMobileMenuOpen ? 1 : 0,
           pointerEvents: isMobileMenuOpen ? "auto" : "none",
         }}
-        className="fixed inset-0 z-40 md:hidden"
+        className="fixed inset-0 z-50 md:hidden "
       >
         <div
           className="absolute inset-0 bg-background/95 backdrop-blur-lg"
