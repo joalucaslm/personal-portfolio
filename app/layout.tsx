@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "João Lucas Lima – Portfólio",
     images: [
       {
-        url: "/image/Pitch João Lucas Lima M.Dias Branco.webp", 
+        url: "/image/Pitch João Lucas Lima M.Dias Branco.webp",
         width: 1200,
         height: 630,
         alt: "Portfólio João Lucas Lima - Full Stack Developer",
@@ -50,7 +50,12 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -62,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/favicon.svg" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
