@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "Portfólio de João Lucas Lima, Full Stack Developer especializado em React, Next.js, Node.js e TypeScript, com foco em aplicações web modernas, acessíveis e performáticas.",
   keywords: [
     "João Lucas Lima",
+    "engenheiro de software",
+    "desenvolvedor frontend",
+    "desenvolvedor backend",
     "full stack developer",
     "software developer",
     "desenvolvedor full stack",
