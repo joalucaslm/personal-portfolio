@@ -36,13 +36,12 @@ export const metadata: Metadata = {
     description:
       "Conheça o portfólio de João Lucas Lima, Full Stack Developer com projetos em React, Next.js, Node.js e APIs REST.",
     url: "https://www.joaolucasdev.com",
-    siteName: "João Lucas Lima – Portfólio",
     images: [
       {
         url: "/image/Pitch João Lucas Lima M.Dias Branco.webp",
         width: 1200,
         height: 630,
-        alt: "Portfólio João Lucas Lima - Full Stack Developer",
+        alt: "Portfólio João Lucas Lima | Desenvolvedor Full Stack",
       },
     ],
     locale: "pt_BR",
@@ -67,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>

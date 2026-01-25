@@ -5,9 +5,9 @@ import Projects from "@/components/sections/projects/Projects";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "João Lucas | Desenvolvedor Full Stack",
+  title: "João Lucas Lima | Desenvolvedor Full Stack",
   description:
-    "Portfólio de João Lucas, desenvolvedor frontend especializado em React, Next.js e interfaces modernas.",
+    "Portfólio de João Lucas Lima, Desenvolvedor Full Stack com experiência em Node.js, React e Next.js, focado em criar aplicações web modernas, performáticas e acessíveis.",
   keywords: [
     "João Lucas",
     "frontend",
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     description:
       "Confira meu portfólio com projetos em React, Next.js e UI moderna.",
     url: "https://www.joaolucasdev.com",
-    siteName: "Portfólio João Lucas Lima",
+    siteName: "João Lucas Lima – Portfólio",
     images: [
       {
-        url: "/favicon.ico",
+        url: "/image/Pitch João Lucas Lima M.Dias Branco.webp",
         width: 1200,
         height: 630,
-        alt: "Portfólio João Lucas Lima",
+        alt: "Portfólio João Lucas Lima | Desenvolvedor Full Stack",
       },
     ],
     locale: "pt_BR",
