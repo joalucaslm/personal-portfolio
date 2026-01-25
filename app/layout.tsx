@@ -8,32 +8,38 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "João Lucas | Desenvolvedor Full Stack",
+  title: "João Lucas Lima | Full Stack Developer (React, Node.js, TypeScript)",
   description:
-    "Portfólio de João Lucas, desenvolvedor frontend especializado em React, Next.js e interfaces modernas.",
+    "Portfólio de João Lucas Lima, Full Stack Developer especializado em React, Next.js, Node.js e TypeScript, com foco em aplicações web modernas, acessíveis e performáticas.",
   keywords: [
-    "João Lucas",
-    "frontend",
-    "react",
-    "next.js",
-    "portfólio",
+    "João Lucas Lima",
+    "full stack developer",
+    "software developer",
     "desenvolvedor full stack",
+    "react developer",
+    "next.js",
+    "node.js",
+    "typescript",
+    "web developer",
+    "portfólio desenvolvedor",
   ],
+
   authors: [{ name: "João Lucas Lima" }],
   creator: "João Lucas Lima",
   metadataBase: new URL("https://www.joaolucasdev.com"),
+
   openGraph: {
-    title: "João Lucas Lima | Desenvolvedor Full Stack",
+    title: "João Lucas Lima | Full Stack Developer",
     description:
-      "Confira meu portfólio com projetos em React, Next.js e UI moderna.",
+      "Conheça o portfólio de João Lucas Lima, Full Stack Developer com projetos em React, Next.js, Node.js e APIs REST.",
     url: "https://www.joaolucasdev.com",
-    siteName: "Portfólio João Lucas Lima",
+    siteName: "João Lucas Lima – Portfólio",
     images: [
       {
-        url: "/logo/favicon.svg",
+        url: "/image/Pitch João Lucas Lima M.Dias Branco.webp", 
         width: 1200,
         height: 630,
-        alt: "Portfólio João Lucas Lima",
+        alt: "Portfólio João Lucas Lima - Full Stack Developer",
       },
     ],
     locale: "pt_BR",
