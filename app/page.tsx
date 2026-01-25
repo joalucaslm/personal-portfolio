@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Portfólio João Lucas Lima",
     images: [
       {
-        url: "/logo/favicon.svg",
+        url: "/favicon.svg",
         width: 1200,
         height: 630,
         alt: "Portfólio João Lucas Lima",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/logo/favicon.svg",
+    icon: "/favicon.svg",
   },
 };
 

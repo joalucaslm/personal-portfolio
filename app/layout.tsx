@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/logo/favicon.svg",
+    icon: "/favicon.svg",
   },
 };
 
@@ -62,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/logo/favicon.svg" sizes="any" />
+        <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
