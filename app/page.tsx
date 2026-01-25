@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/hero/Hero";
 import About from "@/components/sections/about/About";
 import Contact from "@/components/sections/contact/Contact";
+import Projects from "@/components/sections/projects/Projects";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -46,6 +47,7 @@ export default function Home() {
     <main className="w-full flex flex-col items-center ">
       <Hero />
       <About />
+      <Projects />
       <Contact />
     </main>
   );

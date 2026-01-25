@@ -13,6 +13,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], display: "swap" });
 const navLinks = [
   { name: "Início", href: "#" },
   { name: "Sobre", href: "#about" },
+  { name: "Projetos", href: "#projects" },
   { name: "Contato", href: "#contact" },
 ];
 
