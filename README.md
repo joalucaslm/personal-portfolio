@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# João Lucas Lima — Portfólio
 
-## Getting Started
+Portfólio pessoal desenvolvido com foco em performance, acessibilidade e boas práticas de desenvolvimento web.  
+Aqui apresento meus projetos, habilidades e formas de contato como Desenvolvedor Full Stack.
 
-First, run the development server:
+🔗 **Acesse o site:** https://www.joaolucasdev.com
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **Next.js (App Router)**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion** (animações)
+- **Vercel** (deploy)
+
+---
+
+## 📂 Estrutura do Projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+app/
+ ├─ globals.css        # Estilos globais
+ ├─ layout.tsx        # Layout principal da aplicação
+ ├─ page.tsx          # Página inicial
+ ├─ robots.ts         # Configuração de SEO (robots.txt)
+ ├─ sitemap.ts        # Sitemap automático
+
+components/
+ ├─ layout/           # Header, Footer e estrutura geral
+ ├─ sections/         # Seções da página (Hero, About, Projects, Contact)
+ ├─ ui/               # Componentes reutilizáveis (botões, ícones, tema)
+ ├─ interfaces/       # Tipagens TypeScript
+ ├─ provider/         # Providers globais (Theme, Context)
+
+public/
+ ├─ image/            # Imagens do site
+ ├─ logo/             # Logos e ícones
+ ├─ favicon*          # Favicons e ícones da aplicação
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Página totalmente responsiva (mobile, tablet e desktop)  
+- Animações suaves com **Framer Motion**  
+- Alternância de tema **claro / escuro**  
+- SEO configurado com:
+  - `metadata` (title e description)
+  - `robots.ts`
+  - `sitemap.ts`  
+- Componentização organizada e reutilizável  
+- Estrutura baseada no **Next.js App Router**  
+- Interface moderna com foco em acessibilidade e performance  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## ⚙️ Como rodar o projeto localmente
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clonar o repositório
+git clone https://github.com/joaolucaslm/personal-portfolio.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Entrar na pasta
+cd personal-portfolio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Instalar dependências
+npm install
 
-## Deploy on Vercel
+# Rodar em desenvolvimento
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feito com dedicação por [João Lucas Lima](https://www.joaolucasdev.com) • Desenvolvedor Full Stack 🚀
