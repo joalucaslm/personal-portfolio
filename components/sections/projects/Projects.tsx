@@ -30,10 +30,10 @@ const featuredProjects: FeaturedProjectProps[] = [
             Melhor Envio para cálculo automático de frete por região
           </li>
           <li>
-            Geração automatizada de propostas comerciais integrada ao Tiny Olist
+            <b className="font-bold">Geração automatizada</b> de propostas comerciais integrada ao Tiny Olist
           </li>
           <li>
-            Integração com a API do Asana para criação de lembretes,
+            Integração com a API do <b className="font-bold">Asana</b> para criação de lembretes,
             notificações e acompanhamento de tarefas
           </li>
           <li>Serviço de envio automático de códigos de retirada por e-mail</li>

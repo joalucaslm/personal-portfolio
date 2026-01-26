@@ -100,8 +100,8 @@ export default function About() {
               <strong className="font-semibold text-foreground">
                 Desenvolvedor Full Stack
               </strong>{" "}
-              apaixonado pela programação e por ensinar pessoas. Com mais de 4
-              anos de experiência, sou apaixonado por transformar ideias em
+              apaixonado pela programação e por ensinar pessoas. Com mais de <b className="font-bold">4
+              anos de experiência</b>, sou apaixonado por transformar ideias em
               produtos de alto impacto.
             </p>
 
